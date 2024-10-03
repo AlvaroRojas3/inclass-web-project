@@ -1,0 +1,61 @@
+
+
+
+
+:root {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+}
+
+header nav ul {
+    border-top: 2px solid red;
+}
+
+
+ul.menu {
+    text-align: center;
+    border-bottom: 1px solid blue;
+    border-top: 1px solid black;
+    list-style: none;
+    padding: .5rem 0 ;
+}
+
+ul.menu > li {
+    display: inline;
+
+}
+
+ul.menu a {
+    color: rgb(188, 36, 36);
+    text-decoration: none;
+}
+
+ul.menu a:hover {
+    color: red;
+}
+
+ul.menu a:active {
+    color: green;
+}
+
+
+footer {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+/* ul.menu a:visited {
+    color: blue;
+} */
+
+.hero {
+    background-color: url(https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 16rem;
+    padding: 3rem 2rem;
+}

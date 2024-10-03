@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="This is a page about modern web development."> 
+    <meta name="robots" content="index, follow"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>thoughtful.html</title>
+    <style>
+        :root {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        h1.Titlepage {
+            font-size: 36px;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            
+        }
+
+        h1.Introduction {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: left;
+            font-size: 100px;
+        }
+
+        h2.subhead1 {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal; 
+            margin-bottom: 0.2rem;
+            font-size: 32px
+        }
+
+        h2.subhead2 {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 0.2rem;
+            margin-top: 4rem;
+            font-size: 32px
+        
+        }
+
+        h2.subhead3 {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 0.2rem;
+            margin-top: 4rem;
+            font-size: 32px
+        }
+
+        p.whitespace1{
+            margin-top: 0;
+        }
+
+        p.whitespace2{
+            margin-top: 0;
+        }
+        
+        p.whitespace3{
+            margin-top: 0;
+        }
+
+        a:visited {
+            color: rgba(39, 111, 219, 0.76);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        ol.Menu {
+            text-align: center;
+            list-style: none;
+            padding-top: 0;
+            padding-left: 0rem;
+        }
+
+        ol.Menu > li {
+            display: inline;
+        
+        }
+
+        ol.nestedwhitespace1{
+            padding-left: 4rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+            font-family: Georgia, 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        ul.whitespace {
+            margin-bottom: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        ul.nestedwhitespace2 {
+            margin-top: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        section.FirstParagraph {
+            margin-right: 25%;
+            font-family: Georgia, 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+        }
+
+
+        div.SecondParagraph {
+            margin-left: 25%;
+            font-family: Georgia, 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        
+        section.ThirdParagraph {
+            margin-right: 25%;
+            font-family: Georgia, 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+
+        blockquote.fontsize {
+            font-size: 18px;
+        }
+
+
+        div.vertical-line {
+            border-left: 4px solid rgb(163, 160, 160);
+            height: 190px;
+            position: absolute;
+            right: 25%;
+            margin-left: -3px;
+            top: 450px;
+            
+        }
+
+        div.vertical-line2 {
+            border-left: 4px solid rgb(163, 160, 160);
+            height: 450px;
+            position: absolute;
+            left: 25%;
+            margin-left: -3px;
+            top: 700px;
+        }
+
+        div.vertical-line3 {
+            border-left: 4px solid rgb(163, 160, 160);
+            height: 425px;
+            position: absolute;
+            right: 25%;
+            margin-left: -3px;
+            top: 1200px;
+
+        }
+
+        pre.align {
+            font-size: 16px;
+        }
+
+        footer {
+            padding-top: 0.2rem;
+            font-family: Georgia, 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="Titlepage">BE THOUGHTFUL</h1>
+    
+    <hr>
+
+    <header>
+        <nav>
+            <ol class="Menu">
+                <li><a href="">Home</a> &nbsp;</li> 
+                <li><a href="">Feature</a> &nbsp;</li> 
+                <li><a href="">Archive</a> &nbsp;</li> 
+                <li><a href="">FAQ</a> &nbsp;</li> 
+                <li><a href="">Contact Us</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        
+        <h1 class="Introduction">Believe in the power of your own thoughts</h1>
+
+        <section class="FirstParagraph">
+            <div class="vertical-line"></div>
+            <h2 class="subhead1">USING A SINGLE PARAGRAPH</h2>
+            <p class="whitespace1">By <span style="color:gray;">Jane Doe</span> <a href="">jdoe@example.com</a> on <span style="color:gray;">14 May 2099</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi blanditiis velit maiores. Suscipit incidunt cumque iste odit. Aspernatur, optio! Optio explicabo aperiam obcaecati fugiat incidunt, minus itaque impedit culpa iste?
+            Unde sunt quis neque quia corporis delectus consequuntur repellat possimus obcaecati sint facilis culpa dolores reprehenderit, voluptatem corrupti veritatis rem nihil deserunt temporibus est voluptas sequi. Quam dignissimos hic id.
+            Nesciunt mollitia fugit dolore deserunt quidem dolorem! Iste eveniet dolore tempora ipsum eaque rem, modi quos molestias, consequuntur obcaecati, minima quia? Cumque at recusandae enim molestiae assumenda pariatur accusantium voluptatum.
+            Placeat distinctio accusantium minus laudantium sit nostrum temporibus ea libero dicta quos! Praesentium optio eaque laboriosam doloremque voluptatem distinctio numquam, commodi saepe in doloribus, repellendus, dolor est totam adipisci maiores?
+            </p>
+        </section>
+
+        <div class="SecondParagraph">
+            <div class="vertical-line2"></div>
+            <h2 class="subhead2">NESTING LISTS OF A SINGLE KIND</h2>
+            <p class="whitespace2"><span style="color:gray;"> By Mark Smith <a href="">msmith@example.com</a> on 14 April 2099</span></p>
+            <p>Start with an unordered list: </p>
+                <ul class="whitespace">
+                    <li>Here is the first item by itself</li>
+                    <li>Here is a list item with a nested ordered list:</li>
+                </ul>
+                <ol class="nestedwhitespace1">
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas alias consequuntur, placeat assumenda, molestias aperiam doloribus nobis aspernatur quos dignissimos qui! Suscipit deleniti deserunt ipsa hic et error illo rem.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita iste distinctio quod laborum ipsam, nemo tempora aut porro. Architecto, aspernatur deleniti? Sequi atque ad dolore quasi velit a animi!</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad amet et magnam! Repudiandae fuga reiciendis facere veniam, beatae nesciunt sit voluptates explicabo nam at ut iusto, et iste similique cumque!</li>
+                </ol>
+                <ul class="nestedwhitespace2">
+                    <li>Another list item by itself</li>
+                    <li>An item list with a nested description list</li> 
+                </ul>
+                <dl>
+                    <dt><strong><span style="color:rgb(56, 153, 36);">Dreams</span></strong></dt>
+                        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</dd>
+                    <dt><strong><span style="color:rgb(56, 153, 36);">Ideas</span></strong></dt>
+                        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</dd>
+                    <dt><strong><span style="color:rgb(56, 153, 36);">Thoughts</span></strong></dt>
+                        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
+                </dl>
+            
+            
+
+                
+        </div>
+
+        <section class="ThirdParagraph">
+        <div class="vertical-line3"></div>
+        <h2 class="subhead3">WITH BLOCKQUOTES AND CODE BLOCKS</h2>
+        <p class="whitespace3">By <span style="color:gray;">Adam Smith</span> <a href="">adams@example.com</a> on <span style="color:gray;">12 February 2099</span></p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, repellat optio magnam pariatur in ad omnis laborum, officiis sed quas harum adipisci architecto sapiente, facilis assumenda odio numquam similique nihil?
+        Vel similique deserunt suscipit rem amet eos ipsum qui alias iusto quisquam repellendus non, excepturi architecto inventore numquam ea delectus! Ipsam, eveniet! Consequatur itaque voluptatem soluta dolores, alias temporibus natus.
+        Voluptatum blanditiis fuga iste exercitationem. Pariatur, reiciendis. Dolor sequi, hic maiores molestias veritatis dolorem accusamus amet iusto facilis earum minima nobis odit ab magni non neque, voluptatem facere quas explicabo. </p>
+        
+        <blockquote class="fontsize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquam tempore animi laborum incidunt officiis dolorum? Velit ab molestias blanditiis odio facilis pariatur debitis repudiandae. Nostrum ducimus minima nulla vero?
+        Corporis error sunt, magnam perferendis ex doloribus nemo molestiae dolores deserunt odit reiciendis vitae ab necessitatibus nulla repudiandae consequatur? Earum in suscipit aspernatur neque numquam tenetur. Incidunt quos sapiente optio!
+        Illum nulla laborum debitis dolorum deserunt, magnam, totam repudiandae sapiente eius deleniti, possimus qui. Iusto, quidem libero nesciunt reiciendis ducimus repudiandae aut possimus hic, architecto ut, sunt error natus qui.</blockquote>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ea quae vitae, quod vel magnam assumenda delectus. Distinctio atque rerum molestias sapiente aut quam rem sed! Vel dolorem perspiciatis labore?
+        Nobis blanditiis facilis natus molestias, iure fugiat. Dignissimos sit quidem sed.</p>
+
+        <pre class="align">
+            <span style="color:rgba(78, 78, 78, 0.788);">let x, y, z;  // Declare 3 Variables 
+            x = 5;        //Assign the value 5 to x 
+            y = 6;        //Assign the value 6 to y 
+            z = x + y;    //Assign the sum of x and y to z 
+            document.getElementById("dd").innerHTML = "z = " + z;
+            </span>
+
+        </pre>
+        </section>
+
+        <hr>
+
+        <footer>
+            &copy; All rights reserved - 2022
+        </footer>
+
+    </main>
+
+</body>
+</html>

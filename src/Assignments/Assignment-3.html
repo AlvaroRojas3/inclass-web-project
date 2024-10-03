@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow"> 
+    <meta name="description" content="This is my sample page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+
+
+        body {
+            margin: 0;
+            background-color: rgb(106, 118, 143);
+            font-family: "Inria Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        main{
+            font-family: "Inria Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 3rem 10rem 3rem 10rem;
+            background-color: white;
+            border-radius: 50px;
+        }
+
+        ol.topmenu {
+            margin-top: 0;
+            font-size: 1.5rem;
+            width: 100%;
+            background-color: white;
+            padding-left: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            text-align: left;
+            list-style: none;
+        }
+
+        ol.topmenu a:visited{
+            color: rgb(143, 144, 146);
+        }
+
+        .underline {
+            text-decoration: none; 
+            position: relative; 
+          }   
+         
+         .underline:after {
+             position: absolute;
+             height: 4px;
+             margin: 0 auto;
+             content: '';
+             left: 0;
+             right: 0;
+             width: 90%;
+             color: #000;
+             background-color: rgb(106, 118, 143);
+             left: 0;
+             bottom: -8px;
+         }
+
+        ol.topmenu > li > a.NoUnderline {
+            text-decoration: none;
+        }
+
+        ol.topmenu > li {
+            display: inline;
+        
+        }
+
+        header{
+            padding-top: 4rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+        }
+        header > h1 {
+            font-family: "Inria Sans", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top: 2rem;
+            margin-bottom: 0;
+
+        }
+
+        header > h2 {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            color: rgb(106, 118, 143);
+        }
+
+        blockquote{
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            padding: 2rem 0rem;
+            text-align: left;
+            font-size: 18px;
+            color: rgb(106, 118, 143);
+        }
+
+        div.hero {
+            height: 50vh;
+            background-image: url(https://plus.unsplash.com/premium_photo-1669826716652-1710bd4e82b6?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 1rem;
+        }
+
+        .section2, .section3{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    
+        section.section2 > .bold, section.section3 .bold, section.section3 > thead > tr {
+            font-family: "Inria Sans", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .section3 {
+            padding-bottom: 2rem;
+        }
+
+        footer > p {
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        footer{
+            padding-bottom: 0.5rem;
+            width: 100%;
+            margin-top: 2rem;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+        footer > address > p.email {
+            margin-top: 0;
+        }
+
+        footer > address > p.address {
+            margin-bottom: 0;
+        }
+
+        footer > nav > ol.Menu > li > a {
+            text-decoration: none;
+        }
+
+        footer > nav > ol.Menu > li > a:visited {
+            color: rgb(106, 118, 143);
+            
+        }
+
+        footer > address > p.email > a {
+            text-decoration: none;
+        }
+
+        footer > address > p.email > a:visited {
+            color: rgb(106, 118, 143);
+            
+        }
+
+        ol.Menu {
+            padding-left: 0;
+            padding-top: 2rem;
+            padding-bottom: 0.5rem;
+            text-align: center;
+            list-style: none;
+        }
+
+        ol.Menu > li {
+            display: inline;
+        
+        }
+
+        table{
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        
+        }
+
+        thead  th, tbody  td {
+            padding: 10px 0;
+        }
+
+        
+        thead > tr {
+            border-bottom: 3px solid gray;
+        }
+
+        tbody {
+            border-bottom: 3px solid gray;
+        }
+
+        tbody > tr {
+            border-top: 2px solid rgb(146, 144, 144);
+        
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ol class="topmenu">
+                <li><strong>Your Name</strong>&nbsp;&nbsp;</li>
+                <li><a class="NoUnderline" href="">Home</a>&nbsp;&nbsp;</li>
+                <li><a class="underline" href="">Articles</a>&nbsp;&nbsp;</li>
+                <li><a class="NoUnderline" href="">Interests</a>&nbsp;&nbsp;</li>
+            </ol>
+            </nav>
+    </div>
+    <main>
+        <header>
+            <blockquote>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque sit placeat autem perspiciatis, ipsum nam repellendus temporibus pariatur, tempora possimus modi, sapiente facere quia at rem amet! <strong>- John Doe </strong>
+            </blockquote>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+            <div class="hero"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, distinctio quidem, iusto odio iste temporibus praesentium illum perferendis voluptas ab corrupti delectus asperiores aliquam voluptates ullam eum cum, sit ut!
+            Veniam aut dolore aspernatur maiores repellendus, porro laudantium fugiat necessitatibus beatae aperiam, ex a iste sequi! Odit, cupiditate explicabo! Animi, ullam aut quisquam velit reprehenderit quo blanditiis quam voluptatibus fugit:</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam est neque, eligendi earum eos accusantium sunt officia delectus aliquam, deleniti beatae aperiam ut sapiente, minima facere iusto quo harum.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ab esse est. Debitis dolor consectetur quo dignissimos repudiandae eveniet in et earum ex saepe similique, ab nulla blanditiis voluptatem expedita.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eveniet quidem </li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat corporis voluptatem ut, magnam excepturi nobis praesentium quasi porro illo repellat accusantium saepe nulla, nostrum eum. Facere numquam modi cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </header>
+        <section class="section2">
+            <h2 >Lorem ipsum dolor sit amet consectetur</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae laboriosam officia labore omnis. Soluta aliquam, illo neque officia iusto fuga sequi qui quisquam aspernatur quia obcaecati consectetur iste corrupti?</p>
+            <ol>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cum corporis sequi, odit, fugiat placeat labore impedit non autem magni aspernatur asperiores excepturi animi ea totam cumque, maiores perspiciatis itaque?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptatum! Provident quod quam a corrupti error dolorem, sint illum nihil libero fugiat similique iste magnam rem, aliquid suscipit soluta veritatis!</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nulla tenetur, deserunt pariatur officia adipisci quia libero consequatur. Suscipit, impedit aliquid tenetur itaque possimus cupiditate ad nemo obcaecati ea fugiat!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corrupti aliquam optio. Voluptas culpa ipsam hic maxime. Temporibus id, ea officia, quia eius est, provident veniam quis voluptatum enim cumque.</li>
+            </ol>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi inventore? Ipsam fugiat quis inventore veritatis nesciunt voluptates non unde iure fugit expedita, ea placeat nam dolorem ut veniam laudantium?
+            </p>
+        </section>
+        <section class="section3">
+            <h2>Lorem ipsum, sit amet consectetur adipisicing</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Magazinni Alimentari Riunniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+        <footer>
+            <nav>
+            <ol class="Menu">
+                <li><a href="">Home</a>&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="">Articles</a>&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="">Interests</a>&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+            </nav>
+        <address>
+            <p class="address">2568 Ambercove St. New Town, XState 82085</p>
+            <p class="email"><a href="">joe@example.com</a></p>
+        </address>
+        <p>&copy;2021 - 2025 All rights reserved</p>
+    </footer>
+
+    
+</body>
+</html>

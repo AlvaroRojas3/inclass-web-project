@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        Two things to remember, build your html to match the most complex which is the desktop, and css to match the simplest which is mobile then build on complexity of desktop
+        */
+
+        header, footer, div.primary, div.secondary, aside {
+            padding: 1rem;
+            border: 1px solid gray;
+        }
+
+        main {
+            display: flex;
+            /*flex-direction: column-reverse;
+            flex-wrap: nowrap;*/
+            flex-flow: column nowrap;
+        }
+
+        aside {
+            display: none;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        @media (min-width: 600px) {
+
+            aside {
+                display: block;
+                flex: 1;
+            }
+
+            .content {
+                display: flex;
+                flex-flow: row nowrap;
+                
+            }
+
+            .wrapper {
+                display: flex;
+                flex-flow: column nowrap;
+                flex: 3;
+                justify-content: space-between;
+            }
+
+            .primary {
+                flex: 1;
+                
+            }
+
+            nav ul {
+                display: flex;
+                list-style: none;
+                padding-left: 0;
+            }
+
+            nav ul li {
+                margin-right: .5rem;
+            }
+
+            nav {
+                display: flex; 
+            }
+
+            nav ul:first-child {
+                flex: 1;
+            }
+
+            nav ul {
+                list-style: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                </ul>
+
+                <ul>
+                    <li>Five</li>
+                    <li>Six</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="wrapper">
+                <div class="primary">PRIMARY</div>
+                <div class="secondary">SECONDARY Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi perspiciatis enim nostrum id eius, iusto illum tempore tenetur quaerat libero beatae voluptates architecto molestias vero autem sequi non consequuntur culpa!
+                Nam dignissimos fuga, numquam maiores ex earum? Eveniet ad inventore praesentium debitis odio maiores pariatur? Nihil sequi veniam quo eaque, aspernatur excepturi, repellat ducimus repudiandae earum, possimus maxime eligendi tempora.</div>
+            </div>
+            <aside>ASIDE Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum beatae ab. Eaque corrupti dolor beatae, ipsa eveniet dolorum aliquid asperiores, ducimus ab soluta rem ea fugit quod nostrum nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ratione distinctio facilis! Similique delectus modi sit perspiciatis sed facilis. Perspiciatis doloribus tempore corporis eos quidem recusandae ipsam aliquam eligendi quos?</aside>
+        </div>
+        <footer>FOOTER</footer>
+    </main>
+
+
+   <div class="contianer"> /*flex,row */
+        <div class="sidebar"></div>
+        <div class="main"> /*flex,column */
+            <header></header>
+            <div> <!-- FLEX, ROW-->
+                <div>
+                    <div class="one"></div>
+                    <div>
+                        <div class="three"></div>
+                        <div class="four"></div>
+                        <div class="five"></div>
+                    </div>
+                    <div class="two"></div>
+                </div>
+                <div><!-- FLEX, ROW-->
+                    <div> <!-- flex, column-->
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six"></div>
+                </div>
+                </div> 
+            </div>
+            <div></div>
+            <footer></footer>
+        </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="Block 1 container">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+        <div>five</div>
+    </div>
+    <div class="Block 2 Container">
+        <div>six</div>
+        <div>seven</div>
+        <div>eight</div>
+    </div>
+
+    <aside class="Sidebar Container">
+        <div>
+
+        </div>
+    </aside>
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,78 @@
+header {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+footer {
+    background: #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+div.hero {
+    height: 65vh;
+    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1523643391907-41e69459a06f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-image: url(https://live.staticflickr.com/3266/3132659824_6cc7ffc8ca.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-image: url(https://images.unsplash.com/photo-1523643391907-41e69459a06f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    center / cover 
+    no-repeat fixed;
+
+    padding: 1rem;
+
+}
+
+div.hero h1 {
+
+    font-size: 4rem;
+}
+
+div.hero p {
+    font-size: 2rem;
+}
+
+div.hero button {
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    background-color: rgb(11, 82, 139);
+    color: white;
+}
+
+div.hero img {
+    float: right;
+    border-radius: .8rem;
+    border: 2px solid gray;
+    opacity: 0.75;
+    padding: .5rem;
+}
+
+main {
+    opacity: .7;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+
+th , td {
+    border-top: 1px solid blue;
+}
+
+th {
+    border-bottom: 2px solid blue;
+}
+
+tbody tr:nth-child(even){
+    background: gray;
+}

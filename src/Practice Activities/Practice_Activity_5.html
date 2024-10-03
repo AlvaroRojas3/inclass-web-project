@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        *,  ::after, ::before {
+            box-sizing: inherit;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        nav {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            display: flow-root;
+            border-bottom: 2px solid rgb(173, 172, 172);
+        }
+
+        nav > ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        nav > ul >li {
+            font-size: 30px;
+            display: inline;
+        }
+
+        .pull-left {
+            float: left;
+        }
+        
+        .pull-right {
+            float: right;
+        }
+
+        main{
+            padding-left: 11rem;
+            padding-right: 11rem;
+        }
+
+        main > article.Article-1 > h1 {
+            font-size: 36px;
+            margin-bottom: 0;
+           
+        }
+
+        main > article.Article-1 > div > h1 {
+            margin-top: 1rem;
+            font-size: 36px;
+        }
+
+        main > article.Article-1 > div > p {
+            font-size: 20px;
+        }
+
+        img {
+            width: 40%;
+            padding: 1rem;
+            float: left;
+            height: auto;
+        }
+
+        main > article.Article-2 > h1 {
+            font-size: 36px;
+            margin-bottom: 0;
+        }
+
+        .circle{
+            font-size: 65px;
+            float: left;
+            width: 350px;
+            height: 350px;
+            border-radius: 175px;
+            margin: 2rem 0.5rem 2rem 0.5rem;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .vcenter1 .circle {
+            line-height: 350px;
+
+        }
+
+        main > article.Article-3 > h1 {
+            font-size: 36px;
+            margin-bottom: 0;
+            padding-bottom: 1.5rem;
+        }
+
+        .col {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .eqh-overflow {
+            overflow: hidden;
+        }
+
+        .eqh-overflow .col {
+            float: left;
+            padding-bottom: 9999999px;
+            margin-bottom: -9999999px;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            font-size: 24px;
+            border-top: 2px solid rgb(173, 172, 172);
+        }
+
+        footer > p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-top: 0.5rem;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="pull-left">
+                <li><strong>Floated menus:</strong>&nbsp;</li>
+                <li><span style="color: coral;">One</span>&nbsp;</li>
+                <li><span style="color: coral;">Two</span>&nbsp;</li>
+            </ul>
+
+            <ul class="pull-right">
+                <li><span style="color: coral;">Three</span>&nbsp;</li>
+                <li><span style="color: coral;">Four</span>&nbsp;</li>
+            </ul>
+         </nav> 
+    </header>
+
+    <main>
+        <article class="Article-1">
+            <h1><span style="color: lightcoral;">&lt;Article 1&gt;:</span> Wrapping text around an image</h1>
+            <div>
+                <img src="https://images.unsplash.com/photo-1454357000070-7ce0a6beb0a1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Picture of city skyline">
+
+                <h1>A secondary heading </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, possimus! Animi eaque quaerat libero aliquid eos odio enim cum quasi autem earum consectetur ullam praesentium esse minima dolores, rem sequi?
+                Aspernatur ducimus voluptatum eligendi illo a. Quo repellat id velit neque provident non repudiandae repellendus itaque qui, veniam, fugiat saepe dolores nisi, mollitia totam. Illo magni omnis delectus. Voluptatum, mollitia.
+                Quidem adipisci iusto suscipit laborum mollitia aut harum reiciendis. Laborum tempora repudiandae, dolores et reprehenderit voluptatibus quas sunt officiis labore nostrum quasi quibusdam beatae rerum itaque debitis nisi soluta maxime!
+                Facere dolores officiis sed esse sequi beatae, culpa saepe eius eos quod error id reiciendis, sint blanditiis nulla, deserunt quibusdam maiores. Assumenda ut iure error quos pariatur neque vero impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque deleniti cupiditate assumenda ea quaerat distinctio et suscipit. Temporibus architecto delectus at cumque eaque quae ipsa facilis earum in? Velit, quidem!
+                Voluptate, mollitia. Deserunt ipsa id et eveniet qui, libero rem eos aliquid saepe placeat incidunt! Deserunt autem perspiciatis optio! Saepe est debitis exercitationem in recusandae cumque cum quaerat obcaecati pariatur.
+                Amet non temporibus velit corrupti quibusdam repudiandae perspiciatis molestias reiciendis veniam minima exercitationem laborum illo in quam ipsam, sapiente id libero iure? Ad, sunt dolorem. Quo et corrupti veritatis optio!
+                Magni repellendus aut, dolor voluptas deleniti molestias ratione enim maiores natus quidem at ipsum nemo culpa tempora modi earum hic assumenda blanditiis omnis delectus. Doloribus minus dicta id. Rerum, eveniet?
+                </p>
+            </div>
+        </article>
+
+        <article class="Article-2">
+            <h1><span style="color: lightcoral;">&lt;Article 2&gt;:</span> Centering text vertically </h1>
+            <div class="vcenter1">
+                <div class="circle">Selectors</div>
+                <div class="circle">Inheritance</div>
+                <div class="circle">Cascade</div>
+                <div class="circle">Specificity</div>
+            </div>
+        </article>
+
+        <article class="Article-3">
+            <h1><span style="color: lightcoral;">&lt;Article 3&gt;:</span> Equal-height Columns </h1>
+            <div class="eqh-overflow clearfix">
+                <div class="col" style="width: 20%; background-color:#eee">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio sint amet, accusamus eos modi quidem? Temporibus rem est aspernatur quae, adipisci minus eligendi perspiciatis aliquam esse quidem ipsum quibusdam dignissimos.
+                Eum eaque reprehenderit perspiciatis pariatur recusandae, non vero illum quibusdam atque. 
+                </div>
+                <div class="col" style="width: 60%; background-color:black; color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi delectus, vitae iusto, reiciendis earum obcaecati labore ullam, odio possimus adipisci suscipit quia. Natus earum, debitis totam corrupti recusandae illo.
+                Repudiandae animi incidunt pariatur explicabo assumenda tempora similique sit a non consequuntur debitis eius quos saepe, corrupti perspiciatis officia rem numquam optio amet! Quas quis perferendis necessitatibus tempora dolor perspiciatis.
+                Veritatis fugiat ipsum tempora molestias tenetur architecto laudantium quibusdam veniam facere eius harum labore ad amet reprehenderit officia ab voluptates enim quod dicta necessitatibus quas, blanditiis, pariatur est? Perferendis, odio.
+                Doloribus repellat eos esse laborum maiores quasi ea soluta dolorem vel. Nam impedit obcaecati, qui officia consectetur similique quia magni harum aliquam commodi vitae quos vel tempora, cum numquam corrupti?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam expedita minus voluptas accusantium itaque sed consectetur at consequatur necessitatibus nobis harum, quasi quisquam illum, officia asperiores cumque, ipsam aut sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, commodi deleniti accusamus perspiciatis eaque enim voluptates quos deserunt quibusdam odit? Reiciendis sunt a ad autem facilis officia harum in. Aspernatur?
+                At dolores veniam ut. Architecto ea corporis eligendi illo, consectetur labore, aliquam ad earum ab animi fugit tempore facere rem suscipit voluptates impedit? Doloribus vero a, asperiores ipsum facere totam!
+                </div>
+                <div class="col" style="width: 20%; background-color:#eee">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, neque. Amet, tenetur. Sed debitis, praesentium quod sequi omnis non. Quas quis, eius itaque fuga quaerat minima necessitatibus reprehenderit voluptate nesciunt!
+                Culpa quisquam corrupti unde officia, pariatur animi consequatur quas laboriosam soluta, mollitia vel suscipit 
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p class="pull-left"><strong>Alvaro Rojas</strong></p>
+        <p class="pull-right">&copy; All rights reserved</p>
+    </footer>
+
+  
+
+    
+</body>
+</html>

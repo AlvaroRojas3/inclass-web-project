@@ -1,0 +1,90 @@
+:root {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+*,  ::after, ::before {
+    box-sizing: inherit;
+}
+
+/* This is how we fix box-sizing and add it to every single element*/
+
+nav {
+    background-color: #eee;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #aaa;
+    display: flow-root;
+}
+
+nav > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav > ul >li {
+    display: inline;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* This is a hack, no longer used in modern libraries */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hero {
+    background: skyblue;
+    display: flow-root;
+}
+
+.responsive-yt {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.Circles {
+
+    display: flow-root;
+
+}
+
+.circle {
+
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    border: 1px solid gold;
+    border-radius: 125px;
+    margin: calc((100% - 750)) / 6;
+    text-align: center;
+}
+
+.cards-table {
+    display: table;
+}
+
+.cards-table div {
+    display: table-cell;
+    border: 1px solid red;
+    background-color: yellow;
+    width: 30%;
+    margin: 1rem;
+    
+}
+
+.cards-flexbox div {
+    border: 1px solid blue;
+    background: green;
+    margin: 1rem;
+    flex: 1;
+    
+}
