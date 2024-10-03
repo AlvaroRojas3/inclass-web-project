@@ -1,4 +1,3 @@
-/* Your styles go here */
 body {
     width: 80%;
     margin: 0 auto 1rem;
@@ -48,5 +47,3 @@ div {
     flex-flow: row nowrap;
 }
 
-/* @import url("bootstrap/dist/css/bootstrap.min.css");
-@import url("bootstrap-icons/font/bootstrap-icons.css"); */
